@@ -7,20 +7,19 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Jumbotron } from "./component/Jumbotron.js";
-import { Home } from "./component/home.js";
-import { Footer } from "./component/footer.js";
-//render your react application
-
+import { Jumbotron } from "./component/Jumbotron.js"; //Este es el Jumbotron
+import { Home } from "./component/home.js"; // Esto puede ser el group card
+import { Footer } from "./component/footer.js"; //Este es el Footer
+//Render your react application, aqui se supone que puedo modificar las props y eso lo hace dinamico
 ReactDOM.render(
 	<>
 		<Jumbotron
-			title="Welcome to react"
-			description="React is the most popular rendering library in the world"
-			buttonLabel="Go to the official website"
-			buttonUrl="https://reactjs.org/"
+			title="A Warm Welcome!"
+			description="Lorem ipsum dolor sit amet, consectetur adispisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam illo aspernatur vitae fugiat numquam repellat."
+			buttonLabel="Call to action!"
+			buttonUrl="#"
 		/>
-		,<Home />,<Footer title1="Welcome to react" />
+		<Home /> , <Footer title1="Copyright © Your Website 2020" />
 	</>,
 	document.querySelector("#app")
 );

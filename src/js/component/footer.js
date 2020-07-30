@@ -4,12 +4,11 @@ import PropTypes from "prop-types";
 //component
 export const Footer = props => {
 	return (
-		<div className="container-fluid">
+		<div className="container-fluid-footer">
 			<h1 className="display-1">{props.title1}</h1>
 		</div>
 	);
 };
-
 Footer.propTypes = {
 	title1: PropTypes.string
 };
