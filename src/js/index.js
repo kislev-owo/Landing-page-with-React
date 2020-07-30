@@ -19,7 +19,7 @@ ReactDOM.render(
 			buttonLabel="Call to action!"
 			buttonUrl="#"
 		/>
-		<Home /> , <Footer title1="Copyright © Your Website 2020" />
+		<Home />, <Footer title1="Copyright © Your Website 2020" />
 	</>,
 	document.querySelector("#app")
 );
