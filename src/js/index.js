@@ -8,9 +8,16 @@ import "../styles/index.scss";
 
 //import your own components
 import { Jumbotron } from "./component/Jumbotron.js"; //Este es el Jumbotron
-import { Home } from "./component/home.js"; // Esto puede ser el group card
+import { Cards } from "./component/cards.js"; // Esto puede ser el group card
 import { Footer } from "./component/footer.js"; //Este es el Footer
 //Render your react application, aqui se supone que puedo modificar las props y eso lo hace dinamico
+var fila;
+var currentValue = [
+	`Lorem ipsum dolor sir amer, cosectetur adpisicing elit. Sapiente esse necesatalibus raque.`,
+	`Lorem ipsum dolor sir amer, cosectetur adpisicing elit. Explixcado magni beabe culpa natus architecto.`,
+	`Lorem ipsum dolor sir amer, cosectetur adpisicing elit. Sapiente esse necesatalibus raque.`,
+	`Lorem ipsum dolor sir amer, cosectetur adpisicing elit. Explixcado magni beabe culpa natus architecto.`
+];
 ReactDOM.render(
 	<>
 		<Jumbotron
@@ -19,7 +26,18 @@ ReactDOM.render(
 			buttonLabel="Call to action!"
 			buttonUrl="#"
 		/>
-		<Home />, <Footer title1="Copyright © Your Website 2020" />
+		<div className="row justify-content-md-center ">
+			{
+				(fila = currentValue.map(function(x) {
+					return (
+						<div className="col-md-auto">
+							<Cards text={x} />
+						</div>
+					);
+				}))
+			}
+		</div>
+		<Footer title1="Copyright © Your Website 2020" />
 	</>,
 	document.querySelector("#app")
 );
