@@ -26,7 +26,8 @@ ReactDOM.render(
 			buttonLabel="Call to action!"
 			buttonUrl="#"
 		/>
-		<div className="row justify-content-md-center ">
+
+		<div className="row justify-content-md-center  ">
 			{
 				(fila = currentValue.map(function(x) {
 					return (
