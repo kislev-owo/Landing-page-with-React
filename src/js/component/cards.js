@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 //Card component
 export function Cards(props) {
 	return (
-		<div className="card text-center " style={{ width: "18rem" }}>
+		<div className="card text-center " style={{ width: "255px" }}>
 			<img
 				src="https://placehold.it/500x325.jpg"
 				className="card-img-top"

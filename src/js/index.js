@@ -26,7 +26,7 @@ ReactDOM.render(
 			buttonLabel="Call to action!"
 			buttonUrl="#"
 		/>
-
+		,
 		<div className="row justify-content-md-center  ">
 			{
 				(fila = currentValue.map(function(x) {
@@ -38,7 +38,7 @@ ReactDOM.render(
 				}))
 			}
 		</div>
-		<Footer title1="Copyright © Your Website 2020" />
+		,<Footer title1="Copyright © Your Website 2020" />
 	</>,
 	document.querySelector("#app")
 );
