@@ -29,9 +29,9 @@ ReactDOM.render(
 		,
 		<div className="row justify-content-md-center  ">
 			{
-				(fila = currentValue.map(function(x) {
+				(fila = currentValue.map(function(x, index) {
 					return (
-						<div className="col-md-auto">
+						<div className="col-md-auto" key={index}>
 							<Cards text={x} />
 						</div>
 					);
